@@ -83,11 +83,20 @@
       font-size: 18px !important;
     }
 
+    // Format styleshout
+    .styleshout {
+        padding: 30px 10px !important;       
+    }
+
     // Stats Section in small screens, change the border right for border bottom and change margins and padding
     .stats .stat {
         border-right: 0 !important;
         margin-bottom: 40px;
         border-bottom: var(--bs-dark) solid 1px;
         padding-bottom: 20px;
+    }
+
+    .copyright {
+        font-size: 12px;
     }
 }
