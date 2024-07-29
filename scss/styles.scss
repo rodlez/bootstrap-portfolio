@@ -48,6 +48,27 @@
     opacity: 0.8;
 }
 
+// Services Section, same as the Header Section, background image in the section using pseudoclass after and z-index
+.services {
+    background: url('../images/bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .services::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .services .container {
+    z-index: 10;
+  }
+
 
 // Small Screens Format
 
