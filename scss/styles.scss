@@ -41,6 +41,13 @@
     width: 200px;
 }
 
+// Project Section transition when we go over an image in the projects
+.project:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+}
+
 
 // Small Screens Format
 
