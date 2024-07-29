@@ -1,0 +1,47 @@
+// Background Image
+.header {
+    background: #151515 url('../images/intro-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+// Pseudo selector after, creates a ghost element, it's necessary to add content, leave it blank to make an overlay layer to apply transparency
+.header::after {
+    content: '';
+    position: absolute; // in relation with the header tag (position-relative)
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+// This z-index makes the position-relative text-container be on top of the header:after that make the darken effect on the background image
+.header .text-container {
+    z-index: 10;
+}
+
+// Change the font for the roles class
+.header .roles {
+    font-family: 'lora-regular', serif;
+}
+
+// Social Icons
+.header .social {
+    bottom: 50px;
+}
+
+
+// Small Screens Format
+
+@media (max-width: 767px) {
+    // Social Icons
+    .header .social i {
+      font-size: 30px;
+    }
+  
+    // roles font
+    .header .roles {
+      font-size: 18px !important;
+    }
+}
